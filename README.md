@@ -18,4 +18,5 @@ This directive is used for loop when the developer can ensure, that there are no
 In order to convince the comoiler to generate SVE code it is necessary to add the compiler arguments
 - -ftree-vectorize: Enable auto-vectorization
 - -msve-vector-bits=256: specify the vector length. In this case 256 bit
+
 Also the `-march` flag shall be set to specify the target architecture that supports SVE. I used `-march=armv8-a+sve` for *ARMv8-A*
